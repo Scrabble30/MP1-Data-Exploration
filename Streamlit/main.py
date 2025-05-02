@@ -9,12 +9,12 @@ def show_homepage():
 
 def main():
     st.sidebar.title("Wine Data")
-    page = st.sidebar.selectbox("Choose a page", ["Homepage","White Wine"])
+    page = st.sidebar.selectbox("Choose a page", ["Homepage","WhiteWine"])
 
     if page == "Homepage":
         show_homepage()
-    elif page == "White Wine":
-        WhiteWine.show_WhiteWine
+    elif page == "WhiteWine":
+        WhiteWine.WhiteWine()
 
 
 if __name__ == "__main__":
