@@ -1,5 +1,6 @@
 import streamlit as st
 import WhiteWine
+import Comparison
 
 def show_homepage():
     st.title('Mini Project 2 - Wine data')
@@ -25,12 +26,14 @@ def show_homepage():
 
 def main():
     st.sidebar.title("Wine Data")
-    page = st.sidebar.selectbox("Choose a page", ["Homepage","WhiteWine"])
+    page = st.sidebar.selectbox("Choose a page", ["Home page","White Wine","Comparison"])
 
-    if page == "Homepage":
+    if page == "Home page":
         show_homepage()
-    elif page == "WhiteWine":
+    elif page == "White Wine":
         WhiteWine.WhiteWine()
+    elif page == "Comparison":
+        Comparison.Comparison()
 
 
 if __name__ == "__main__":
